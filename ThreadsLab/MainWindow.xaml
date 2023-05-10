@@ -1,0 +1,44 @@
+﻿<Window x:Class="lab5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="0,10,622,0">
+            <Label>Exercise 1</Label>
+            <Label Width="30" Content="K"/>
+            <TextBox x:Name="K"/>
+            <Label Width="30" Content="N"/>
+            <TextBox x:Name="N"/>
+            <Button Click="Ex1Tasks">Tasks</Button>
+            <TextBox x:Name="ex1T"/>
+            <Button Click="Ex1Delegates">Delegates</Button>
+            <TextBox Name="ex1D"/>
+            <Button Click="Ex1Async">Async/Awaits</Button>
+            <TextBox Name="ex1A"/>
+        </StackPanel>
+        <StackPanel Margin="183,10,448,10">
+            <Label>Exercise 2</Label>
+            <Label>i</Label>
+            <TextBox Name="Fib_i"/>
+            <Button Click="Fibonacci">GET</Button>
+            <ProgressBar Height="10" Name="Fib_p" Minimum="0" Maximum="100" Value="0"/>
+            <TextBox Name="Fib_result" ></TextBox>
+        </StackPanel>
+        <StackPanel Margin="352,10,274,10">
+            <Label>Exercise 3</Label>
+            <Label>Kompresja</Label>
+            <Button Click="Comp">Compress</Button>
+            <Button Click="Decomp">Decompress</Button>
+        </StackPanel>
+        <StackPanel Margin="531,10,0,0">
+            <Label>Exercise 4</Label>
+            <Label>DNS</Label>
+            <Button Click="Resolve">Resolve</Button>
+            <TextBox Name="ResolveResult" Height="130"></TextBox>
+        </StackPanel>
+    </Grid>
+</Window>
