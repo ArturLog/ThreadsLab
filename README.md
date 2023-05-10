@@ -1,5 +1,5 @@
 # ThreadsLab
-WPF Project for laboratories using:
+Study WPF project for laboratories using:
 - Tasks
 - Delegates
 - Async
